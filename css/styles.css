@@ -145,8 +145,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   height: 44px;
 }
-.nav-logo .logo-icon { height: 38px; display: none; }
-.nav-logo .logo-full { height: 38px; }
+.nav-logo .logo-icon { height: 38px; display: none; filter: brightness(0) invert(1); }
+.nav-logo .logo-full { height: 38px; filter: brightness(0) invert(1); }
 
 .nav-links {
   display: flex;
@@ -251,6 +251,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .hero-logo-img {
   height: 90px;
   margin: 0 auto;
+  filter: brightness(0) invert(1);
   filter: drop-shadow(0 0 20px rgba(204,0,0,0.5));
 }
 .hero-title {
@@ -387,20 +388,13 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .swiper-slide:hover .slide-img { transform: scale(1.04); }
 
-.slide-placeholder {
+.slide-link {
+  display: block;
   position: absolute;
   inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1a1a1a, #2a0000);
+  text-decoration: none;
+  color: inherit;
 }
-.slide-placeholder i {
-  font-size: 3rem;
-  color: rgba(255,255,255,0.1);
-}
-/* Hide placeholder when real image loads */
-.slide-img[style*="url"] .slide-placeholder { display: none; }
 
 .slide-overlay {
   position: absolute;
@@ -411,6 +405,19 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   transition: transform var(--transition);
 }
 .swiper-slide:hover .slide-overlay { transform: translateY(0); }
+
+.slide-ig {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.7);
+  margin-top: 8px;
+  letter-spacing: 0.05em;
+  transition: color var(--transition);
+}
+.swiper-slide:hover .slide-ig { color: var(--white); }
 
 .slide-tag {
   display: inline-block;
