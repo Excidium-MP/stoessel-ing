@@ -11,43 +11,37 @@ const translations = {
     'nav.services':           'Servicios',
     'nav.gallery':            'Galería',
     'nav.contact':            'Contacto',
-    'hero.title':             'Stöessel Ingeniería',
-    'hero.subtitle':          'Experiencia, tecnología y pasión por los eventos',
-    'hero.services':          'Sonido · Iluminación · Rigging · Grupos Electrógenos',
-    'hero.cta':               'Ver Proyectos',
     'about.label':            'Sobre Nosotros',
-    'about.title':            'Más de 20 años de trayectoria',
-    'about.p1':               'Contamos con más de 20 años de trayectoria brindando equipamiento técnico integral para eventos de distinta escala y complejidad.',
-    'about.p2':               'Ofrecemos soluciones de alta calidad, resultado de la combinación entre equipos profesionales altamente capacitados y tecnología innovadora, aplicada con criterio técnico y operativo.',
-    'about.p3':               'Abordamos cada proyecto desde la etapa de producción, transformando los desafíos técnicos de nuestros clientes en experiencias eficientes, sólidas y memorables.',
-    'about.p4':               'Trabajamos en sinergia con organizadores y marcas, asegurando ejecuciones precisas que potencian el impacto del evento y generan experiencias que conectan y emocionan.',
+    'about.title':            'Nos dedicamos a los eventos hace más de 20 años',
+    'about.p1':               'Somos proveedores de equipamiento técnico para eventos. Ofrecemos calidad y excelencia. Lo logramos gracias a la combinación de nuestro personal apasionado y tecnología innovadora. Nos gusta la calidad y la ofrecemos.',
+    'about.p2':               'Mediante desafíos técnicos propios de nuestros clientes, logramos que un evento sea fascinante desde el momento de producción. Generamos verdadera sinergia para que un evento sea exitoso y que logre despertar emociones.',
+    'about.p3':               'Nuestra pasión por lo que hacemos, marca la diferencia.',
     'services.label':         'Lo que hacemos',
     'services.title':         'Servicios',
-    'services.audio.kicker':  'Sonido',
-    'services.audio.title':   'El sonido como herramienta de comunicación',
-    'services.audio.p1':      'Desde reuniones ejecutivas hasta eventos corporativos de gran escala. En espacios abiertos o cerrados, cada proyecto es abordado con el mismo nivel de planificación, precisión y responsabilidad.',
-    'services.audio.p2':      'Contamos con sistemas de audio profesionales, seleccionados según los requerimientos técnicos de cada evento, equipados con las primeras marcas a nivel mundial: JBL Professional, Shure, Sennheiser y RCF.',
-    'services.audio.p3':      'Garantizamos claridad, uniformidad y fidelidad sonora, asegurando que cada mensaje se escuche con impacto y excelencia.',
     'services.lighting.kicker':'Iluminación',
-    'services.lighting.title':'Iluminación profesional orientada a resultados',
-    'services.lighting.p1':   'La iluminación jerarquiza el contenido, define espacios y dirige la atención.',
-    'services.lighting.p2':   'Diseñamos soluciones lumínicas alineadas a los objetivos del evento, considerando niveles, color, contraste y dinámica escénica.',
-    'services.lighting.p3':   'Con equipamiento profesional y control preciso, generamos climas que optimizan el impacto visual y refuerzan la percepción de marca.',
+    'services.lighting.title':'La luz junto con la tecnología es arte',
+    'services.lighting.p1':   'La luz destaca el contenido. Resalta imágenes que perduran en la memoria.',
+    'services.lighting.p2':   'Creamos una atmósfera apropiada capaz de transportar hacia otro lugar a una audiencia. Gracias a una amplia gama de equipamiento, podemos generar distintos climas.',
+    'services.lighting.p3':   'La buena iluminación y saber utilizarla genera un alto impacto y esto hace que un evento brille.',
+    'services.audio.kicker':  'Sonido',
+    'services.audio.title':   'La música es sonido organizado',
+    'services.audio.p1':      'Desde pequeños a grandes eventos. En lugares abiertos o cerrados. Cualquiera sea el espacio y la magnitud siempre tomamos muy en serio nuestro trabajo.',
+    'services.audio.p2':      'Disponemos de diferentes tipos de sistemas de audio acorde a cada necesidad.',
+    'services.audio.p3':      'Logramos un sonido puro y de excelencia. Sonido que conquista todos los sentidos.',
     'services.rigging.kicker':'Rigging',
-    'services.rigging.title': 'Rigging implacable',
-    'services.rigging.p1':    'Somos una de las pocas empresas del país especializadas en rigging y trusses, y representantes oficiales de Prolyte (Holanda), operando bajo estándares internacionales.',
-    'services.rigging.p2':    'Nuestros riggers intervienen desde la planificación, realizando cálculos estructurales con la seguridad como prioridad absoluta.',
-    'services.rigging.p3':    'Aplicamos controles e inspecciones rigurosas sobre cada componente, garantizando montajes confiables y seguros.',
+    'services.rigging.title': 'Implacable',
+    'services.rigging.p1':    'Nuestros riggers, están presentes desde la fase de planificación. Proporcionan cálculos estructurales en donde la seguridad es la prioridad absoluta. Somos excesivamente rigurosos.',
+    'services.rigging.p2':    'Sometemos a cientos de piezas de alta calidad a inspecciones minuciosas y regulares. Nos tomamos la seguridad muy en serio.',
+    'services.rigging.p3':    'Miembros Prolyte Group (Holanda).',
     'services.power.kicker':  'Grupos Electrógenos',
-    'services.power.title':   'Energía de respaldo',
-    'services.power.p1':      'Contamos con grupos electrógenos de 5 a 220 kVA, modernos y silenciosos, con mantenimiento preventivo riguroso que garantiza confiabilidad operativa.',
-    'services.power.p2':      'Brindamos generación y distribución eléctrica para eventos corporativos, ferias y stands, en espacios cerrados y vía pública.',
-    'services.power.p3':      'Trabajamos bajo normas IRAM, utilizando equipamiento de marcas líderes como CETEC, asegurando energía continua, segura y de calidad.',
-    'quality.title':          'No hacemos cantidad. Hacemos calidad.',
-    'quality.p1':             'En un entorno orientado a la producción masiva, elegimos diferenciarnos a través de la excelencia, el detalle y la singularidad de cada proyecto.',
-    'quality.p2':             'No priorizamos el volumen, sino la calidad de ejecución, la atención personalizada y la comprensión profunda de los objetivos de cada cliente.',
-    'quality.p3':             'En Stöessel, brindamos un servicio integral donde la calidad técnica, el capital humano y la personalización constituyen los pilares de nuestro compromiso profesional.',
-    'quality.closing':        'Donde la calidad y la personalización se encuentran.',
+    'services.power.title':   'Energía para el éxito',
+    'services.power.p1':      'Contamos con generadores desde 5 a 220 KVA. Modernos y silenciosos.',
+    'services.power.p2':      'Hacemos exhaustivos mantenimientos preventivos, por lo cual podemos dar confiabilidad a la hora de proveer energía. Proporcionamos distribución eléctrica para stands, ferias, tanto en lugares cerrados como en la vía pública.',
+    'services.power.p3':      'Trabajamos bajo normas IRAM para dar seguridad y calidad en todos nuestros trabajos.',
+    'quality.title':          'No Hacemos Cantidad, Hacemos Calidad',
+    'quality.p1':             'En un mundo centrado en la producción masiva, optamos por diferenciarnos. No buscamos simplemente hacer cantidad y volumen; nuestro enfoque está en la singularidad y la calidad de cada proyecto. Priorizamos la atención individualizada, asegurándonos de que cada cliente se sienta escuchado y satisfecho con el resultado final.',
+    'quality.p2':             'En Stöessel, nos enorgullece ofrecer un servicio excepcional, donde la calidad, el recurso humano y la personalización son los pilares fundamentales de nuestro compromiso. Estamos listos para colaborar en la realización de proyectos memorables y significativos.',
+    'quality.closing':        '¡Dónde la calidad y la personalización se encuentran!',
     'gallery.label':          'Nuestros eventos',
     'gallery.title':          'Galería de Proyectos',
     'gallery.igLabel':        'Ver en Instagram',
@@ -78,43 +72,37 @@ const translations = {
     'nav.services':           'Services',
     'nav.gallery':            'Gallery',
     'nav.contact':            'Contact',
-    'hero.title':             'Stöessel Engineering',
-    'hero.subtitle':          'Experience, technology and passion for events',
-    'hero.services':          'Sound · Lighting · Rigging · Power Generators',
-    'hero.cta':               'See Projects',
     'about.label':            'About Us',
-    'about.title':            'Over 20 years of experience',
-    'about.p1':               'We have over 20 years of experience providing comprehensive technical equipment for events of every scale and complexity.',
-    'about.p2':               'We deliver high-quality solutions, the result of combining highly trained professional teams with innovative technology, applied with technical and operational judgment.',
-    'about.p3':               'We approach every project from the production stage, turning our clients\' technical challenges into efficient, solid and memorable experiences.',
-    'about.p4':               'We work in synergy with organizers and brands, ensuring precise executions that amplify the impact of each event and create experiences that connect and move people.',
+    'about.title':            'We have been dedicated to events for more than 20 years',
+    'about.p1':               'We are providers of technical equipment for events. We offer quality and excellence. We achieve it thanks to the combination of our passionate staff and innovative technology. We like quality, and we deliver it.',
+    'about.p2':               'Through our clients\' own technical challenges, we make an event fascinating from the production stage. We create true synergy so that an event is successful and awakens emotions.',
+    'about.p3':               'Our passion for what we do makes the difference.',
     'services.label':         'What we do',
     'services.title':         'Services',
-    'services.audio.kicker':  'Sound',
-    'services.audio.title':   'Sound as a communication tool',
-    'services.audio.p1':      'From executive meetings to large-scale corporate events. Indoors or outdoors, every project is approached with the same level of planning, precision and responsibility.',
-    'services.audio.p2':      'We work with professional audio systems, selected according to the technical requirements of each event, featuring the world\'s leading brands: JBL Professional, Shure, Sennheiser and RCF.',
-    'services.audio.p3':      'We guarantee clarity, uniformity and sound fidelity, making sure every message is heard with impact and excellence.',
     'services.lighting.kicker':'Lighting',
-    'services.lighting.title':'Professional, results-driven lighting',
-    'services.lighting.p1':   'Lighting highlights content, defines spaces and directs attention.',
-    'services.lighting.p2':   'We design lighting solutions aligned with the goals of the event, considering levels, color, contrast and stage dynamics.',
-    'services.lighting.p3':   'With professional equipment and precise control, we create atmospheres that maximize visual impact and reinforce brand perception.',
+    'services.lighting.title':'Light combined with technology is art',
+    'services.lighting.p1':   'Light highlights the content. It brings out images that last in the memory.',
+    'services.lighting.p2':   'We create the right atmosphere, capable of transporting an audience somewhere else. Thanks to a wide range of equipment, we can create different moods.',
+    'services.lighting.p3':   'Good lighting, and knowing how to use it, creates high impact — and that makes an event shine.',
+    'services.audio.kicker':  'Sound',
+    'services.audio.title':   'Music is organized sound',
+    'services.audio.p1':      'From small to large events. Indoors or outdoors. Whatever the space and the scale, we always take our work very seriously.',
+    'services.audio.p2':      'We offer different types of audio systems to suit every need.',
+    'services.audio.p3':      'We achieve pure, excellent sound. Sound that conquers all the senses.',
     'services.rigging.kicker':'Rigging',
-    'services.rigging.title': 'Relentless rigging',
-    'services.rigging.p1':    'We are one of the few companies in the country specialized in rigging and trusses, and official representatives of Prolyte (Netherlands), operating under international standards.',
-    'services.rigging.p2':    'Our riggers are involved from the planning stage, performing structural calculations with safety as the absolute priority.',
-    'services.rigging.p3':    'We apply rigorous controls and inspections to every component, guaranteeing reliable and safe setups.',
+    'services.rigging.title': 'Relentless',
+    'services.rigging.p1':    'Our riggers are present from the planning phase. They provide structural calculations where safety is the absolute priority. We are exceedingly rigorous.',
+    'services.rigging.p2':    'We subject hundreds of high-quality components to thorough, regular inspections. We take safety very seriously.',
+    'services.rigging.p3':    'Members of Prolyte Group (Netherlands).',
     'services.power.kicker':  'Power Generators',
-    'services.power.title':   'Backup power',
-    'services.power.p1':      'We have modern, silent power generators from 5 to 220 kVA, with rigorous preventive maintenance that guarantees operational reliability.',
-    'services.power.p2':      'We provide power generation and electrical distribution for corporate events, trade fairs and stands, indoors and on public roads.',
-    'services.power.p3':      'We work under IRAM standards, using equipment from leading brands such as CETEC, ensuring continuous, safe, quality power.',
-    'quality.title':          'We don\'t do quantity. We do quality.',
-    'quality.p1':             'In an environment geared towards mass production, we choose to stand out through excellence, attention to detail and the uniqueness of every project.',
-    'quality.p2':             'We don\'t prioritize volume — we prioritize quality of execution, personalized attention and a deep understanding of each client\'s goals.',
-    'quality.p3':             'At Stöessel, we provide an end-to-end service where technical quality, human talent and personalization are the pillars of our professional commitment.',
-    'quality.closing':        'Where quality and personalization meet.',
+    'services.power.title':   'Power for success',
+    'services.power.p1':      'We have generators from 5 to 220 KVA. Modern and silent.',
+    'services.power.p2':      'We carry out exhaustive preventive maintenance, which is why we can guarantee reliability when providing power. We provide electrical distribution for stands and trade fairs, both indoors and on public roads.',
+    'services.power.p3':      'We work under IRAM standards to ensure safety and quality in all our work.',
+    'quality.title':          'We Don\'t Do Quantity, We Do Quality',
+    'quality.p1':             'In a world centered on mass production, we choose to be different. We are not simply looking to do quantity and volume; our focus is on the uniqueness and quality of each project. We prioritize individualized attention, making sure every client feels heard and satisfied with the final result.',
+    'quality.p2':             'At Stöessel, we take pride in offering an exceptional service, where quality, human talent and personalization are the fundamental pillars of our commitment. We are ready to collaborate on memorable and meaningful projects.',
+    'quality.closing':        'Where quality and personalization meet!',
     'gallery.label':          'Our events',
     'gallery.title':          'Project Gallery',
     'gallery.igLabel':        'View on Instagram',
@@ -193,7 +181,7 @@ navLinks.querySelectorAll('a').forEach(link => {
   });
 });
 
-/* ---- HERO PARALLAX ---- */
+/* ---- HERO VIDEO ---- */
 const heroVideo = document.querySelector('.hero-video');
 window.addEventListener('scroll', () => {
   const scrolled = window.scrollY;
@@ -202,31 +190,12 @@ window.addEventListener('scroll', () => {
   }
 }, { passive: true });
 
-/* ---- GSAP HERO REVEAL ---- */
-window.addEventListener('load', () => {
-  const tl = gsap.timeline({ defaults: { ease: 'power3.out' } });
-
-  tl.to('#heroLogo',    { opacity: 1, y: 0, duration: 0.9, delay: 0.2 }, 'start')
-    .fromTo('#heroLogo', { y: 30 }, { y: 0, duration: 0.9 }, 'start')
-
-    .to('.hero-content', { opacity: 1, duration: 0 }, 'start')
-
-    .fromTo('#heroTitle',
-      { opacity: 0, y: 40 },
-      { opacity: 1, y: 0, duration: 0.8 }, '-=0.4')
-
-    .fromTo('#heroSubtitle',
-      { opacity: 0, y: 20 },
-      { opacity: 1, y: 0, duration: 0.7 }, '-=0.5')
-
-    .fromTo('#heroServices',
-      { opacity: 0, y: 16 },
-      { opacity: 1, y: 0, duration: 0.6 }, '-=0.45')
-
-    .fromTo('#heroCta',
-      { opacity: 0, y: 16 },
-      { opacity: 1, y: 0, duration: 0.6 }, '-=0.4');
-});
+// Resume playback when the tab becomes visible again (browsers pause hidden videos)
+if (heroVideo) {
+  document.addEventListener('visibilitychange', () => {
+    if (!document.hidden) heroVideo.play().catch(() => {});
+  });
+}
 
 /* ---- AOS INIT ---- */
 AOS.init({
