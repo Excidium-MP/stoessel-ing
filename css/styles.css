@@ -254,6 +254,30 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
     rgba(13,13,13,1) 100%
   );
 }
+.hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  padding: 0 24px;
+}
+.hero-tagline {
+  font-family: var(--font-head);
+  font-size: clamp(1.6rem, 4vw, 2.6rem);
+  letter-spacing: 0.06em;
+  line-height: 1.2;
+  color: var(--white);
+  text-shadow: 0 2px 18px rgba(0,0,0,0.7);
+  margin-bottom: 28px;
+}
+.hero-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+.hero-cta .btn-whatsapp { margin-top: 0; }
+
 .hero-scroll-hint {
   position: absolute;
   bottom: 36px;
@@ -354,6 +378,12 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   line-height: 1.75;
   margin-bottom: 12px;
 }
+.service-text .service-tagline {
+  font-style: italic;
+  font-size: 1rem;
+  color: var(--gold);
+  margin: -10px 0 14px;
+}
 
 /* ---------- QUALITY ---------- */
 .quality {
@@ -396,6 +426,29 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   color: var(--gold) !important;
   margin-top: 24px;
 }
+.cred-badges {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 28px;
+}
+.cred-badges li {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 16px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  background: var(--surface);
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--white);
+}
+.cred-badges li i {
+  color: var(--gold);
+  font-size: 0.85rem;
+}
 
 /* ---------- GALLERY ---------- */
 .gallery { background: var(--surface); padding-bottom: 80px; }
@@ -418,7 +471,10 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .slide-img {
   position: absolute;
   inset: 0;
-  background: var(--surface2) center/cover no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: var(--surface2);
   transition: transform 0.5s ease;
 }
 .swiper-slide:hover .slide-img { transform: scale(1.04); }
@@ -588,6 +644,17 @@ a.contact-value:hover { color: var(--gold); }
 /* Hide browser default placeholder */
 .form-group input::placeholder,
 .form-group textarea::placeholder { color: transparent; }
+
+.form-status {
+  font-size: 0.85rem;
+  color: var(--gold);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--gold);
+  border-radius: var(--radius);
+  background: var(--surface);
+  padding: 12px 16px;
+}
+.form-status[hidden] { display: none; }
 
 /* ---------- FOOTER ---------- */
 #footer {
@@ -799,22 +866,22 @@ a.contact-value:hover { color: var(--gold); }
   .swiper-slide { height: 280px; }
   .swiper-button-prev, .swiper-button-next { display: none !important; }
   .modal-content { padding: 32px 24px; }
+  .hero-cta { flex-direction: column; }
 }
 
-/* ---- GALLERY LOADING SPINNER ---- */
-.gallery-loading {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 3rem 0;
+/* ---------- REDUCED MOTION ---------- */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .hero-scroll-hint .chevron { animation: none; }
+  .fab-whatsapp { animation: none; }
+  [data-aos] {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
-.gallery-loading[hidden] { display: none; }
-.gallery-loading-spinner {
-  width: 40px;
-  height: 40px;
-  border: 3px solid rgba(255, 255, 255, 0.1);
-  border-top-color: var(--red);
-  border-radius: 50%;
-  animation: gallery-spin 0.7s linear infinite;
-}
-@keyframes gallery-spin { to { transform: rotate(360deg); } }

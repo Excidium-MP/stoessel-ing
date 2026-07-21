@@ -3,9 +3,59 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Stöessel Ingeniería en Eventos — Más de 20 años como proveedores de equipamiento técnico para eventos: Sonido, Iluminación, Rigging y Grupos Electrógenos." />
-  <title>Stöessel Ingeniería en Eventos</title>
+  <meta name="description" content="Alquiler de sonido profesional, iluminación, rigging y grupos electrógenos (5 a 220 KVA) para eventos en Buenos Aires. Más de 20 años de experiencia. Pedí tu presupuesto." />
+  <title>Stöessel Ingeniería en Eventos | Sonido, Iluminación, Rigging y Grupos Electrógenos – Buenos Aires</title>
+  <link rel="canonical" href="https://stoessel-ing.vercel.app/" />
   <link rel="icon" type="image/png" href="assets/img/logo-gear.png" />
+  <meta name="theme-color" content="#0d0d0d" />
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Stöessel Ingeniería en Eventos" />
+  <meta property="og:title" content="Stöessel Ingeniería en Eventos | Sonido, Iluminación, Rigging y Grupos Electrógenos – Buenos Aires" />
+  <meta property="og:description" content="Alquiler de sonido profesional, iluminación, rigging y grupos electrógenos (5 a 220 KVA) para eventos en Buenos Aires. Más de 20 años de experiencia." />
+  <meta property="og:url" content="https://stoessel-ing.vercel.app/" />
+  <meta property="og:image" content="https://stoessel-ing.vercel.app/assets/img/og-image.jpg" />
+  <meta property="og:locale" content="es_AR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Stöessel Ingeniería en Eventos | Sonido, Iluminación, Rigging y Grupos Electrógenos – Buenos Aires" />
+  <meta name="twitter:description" content="Alquiler de sonido profesional, iluminación, rigging y grupos electrógenos (5 a 220 KVA) para eventos en Buenos Aires. Más de 20 años de experiencia." />
+  <meta name="twitter:image" content="https://stoessel-ing.vercel.app/assets/img/og-image.jpg" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Stöessel Ingeniería en Eventos",
+    "description": "Alquiler de sonido profesional, iluminación, rigging y grupos electrógenos (5 a 220 KVA) para eventos en Buenos Aires. Más de 20 años de experiencia.",
+    "url": "https://stoessel-ing.vercel.app/",
+    "telephone": "+5491152267233",
+    "email": "info@stoessel-eventos.com",
+    "image": "https://stoessel-ing.vercel.app/assets/img/og-image.jpg",
+    "logo": "https://stoessel-ing.vercel.app/assets/img/logo-gear.png",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Buenos Aires",
+      "addressCountry": "AR"
+    },
+    "areaServed": {
+      "@type": "AdministrativeArea",
+      "name": "Buenos Aires, Argentina"
+    },
+    "sameAs": ["https://www.instagram.com/stoessel_ing/"],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Servicios técnicos para eventos",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alquiler de Sonido Profesional para Eventos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alquiler de Iluminación para Eventos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Rigging y Estructuras para Eventos" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Alquiler de Grupos Electrógenos (5 a 220 KVA)" } }
+      ]
+    }
+  }
+  </script>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -37,7 +87,7 @@
         <span></span><span></span><span></span>
       </button>
       <div class="nav-links" id="navLinks">
-        <a href="#inicio" data-i18n="nav.home">Inicio</a>
+        <a href="#hero" data-i18n="nav.home">Inicio</a>
         <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
         <a href="#servicios" data-i18n="nav.services">Servicios</a>
         <a href="#galeria" data-i18n="nav.gallery">Galería</a>
@@ -49,7 +99,7 @@
 
   <!-- ===================== HERO ===================== -->
   <section id="hero" class="hero">
-    <h1 class="sr-only">Stöessel Ingeniería en Eventos</h1>
+    <h1 class="sr-only">Stöessel Ingeniería en Eventos — Alquiler de Sonido, Iluminación, Rigging y Grupos Electrógenos en Buenos Aires</h1>
     <video
       class="hero-video"
       id="heroVideo"
@@ -57,10 +107,21 @@
       muted
       loop
       playsinline
-      preload="auto">
-      <source src="assets/video/hero-drone.mp4" type="video/mp4" />
+      preload="metadata"
+      poster="assets/img/hero-poster.jpg">
+      <source src="assets/video/hero-drone-web.mp4" type="video/mp4" />
     </video>
     <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-tagline" data-i18n="hero.tagline">Sonido, iluminación, rigging y energía para tu evento</p>
+      <div class="hero-cta">
+        <a href="#contacto" class="btn-primary" data-i18n="hero.ctaQuote">Pedir presupuesto</a>
+        <a href="https://wa.me/5491152267233" target="_blank" rel="noopener" class="btn-whatsapp">
+          <i class="fa-brands fa-whatsapp"></i>
+          <span data-i18n="hero.ctaWhatsapp">WhatsApp</span>
+        </a>
+      </div>
+    </div>
     <a href="#nosotros" class="hero-scroll-hint" aria-label="Bajar">
       <span class="chevron"></span>
     </a>
@@ -105,7 +166,8 @@
         </div>
         <div class="service-text">
           <span class="service-kicker" data-i18n="services.lighting.kicker">Iluminación</span>
-          <h3 data-i18n="services.lighting.title">La luz junto con la tecnología es arte</h3>
+          <h3 data-i18n="services.lighting.title">Alquiler de Iluminación para Eventos</h3>
+          <p class="service-tagline" data-i18n="services.lighting.tagline">La luz junto con la tecnología es arte</p>
           <p data-i18n="services.lighting.p1">
             La luz destaca el contenido. Resalta imágenes que perduran en la memoria.
           </p>
@@ -125,7 +187,8 @@
         </div>
         <div class="service-text">
           <span class="service-kicker" data-i18n="services.audio.kicker">Sonido</span>
-          <h3 data-i18n="services.audio.title">La música es sonido organizado</h3>
+          <h3 data-i18n="services.audio.title">Alquiler de Sonido Profesional</h3>
+          <p class="service-tagline" data-i18n="services.audio.tagline">La música es sonido organizado</p>
           <p data-i18n="services.audio.p1">
             Desde pequeños a grandes eventos. En lugares abiertos o cerrados. Cualquiera sea el espacio y la magnitud siempre tomamos muy en serio nuestro trabajo.
           </p>
@@ -145,7 +208,8 @@
         </div>
         <div class="service-text">
           <span class="service-kicker" data-i18n="services.rigging.kicker">Rigging</span>
-          <h3 data-i18n="services.rigging.title">Implacable</h3>
+          <h3 data-i18n="services.rigging.title">Rigging y Estructuras para Eventos</h3>
+          <p class="service-tagline" data-i18n="services.rigging.tagline">Implacable</p>
           <p data-i18n="services.rigging.p1">
             Nuestros riggers, están presentes desde la fase de planificación. Proporcionan cálculos estructurales en donde la seguridad es la prioridad absoluta. Somos excesivamente rigurosos.
           </p>
@@ -165,7 +229,8 @@
         </div>
         <div class="service-text">
           <span class="service-kicker" data-i18n="services.power.kicker">Grupos Electrógenos</span>
-          <h3 data-i18n="services.power.title">Energía para el éxito</h3>
+          <h3 data-i18n="services.power.title">Alquiler de Grupos Electrógenos (5 a 220 KVA)</h3>
+          <p class="service-tagline" data-i18n="services.power.tagline">Energía para el éxito</p>
           <p data-i18n="services.power.p1">
             Contamos con generadores desde 5 a 220 KVA. Modernos y silenciosos.
           </p>
@@ -198,6 +263,12 @@
           <p class="quality-closing" data-i18n="quality.closing">
             ¡Dónde la calidad y la personalización se encuentran!
           </p>
+          <ul class="cred-badges">
+            <li><i class="fa-solid fa-certificate"></i><span data-i18n="cred.prolyte">Miembros Prolyte Group (Holanda)</span></li>
+            <li><i class="fa-solid fa-shield-halved"></i><span data-i18n="cred.iram">Trabajo bajo normas IRAM</span></li>
+            <li><i class="fa-solid fa-bolt"></i><span data-i18n="cred.kva">Generadores de 5 a 220 KVA</span></li>
+            <li><i class="fa-solid fa-clock"></i><span data-i18n="cred.years">Más de 20 años de experiencia</span></li>
+          </ul>
         </div>
       </div>
     </div>
@@ -212,13 +283,68 @@
       </div>
     </div>
 
-    <div id="galleryLoading" class="gallery-loading" aria-live="polite">
-      <span class="gallery-loading-spinner"></span>
-    </div>
-
     <div class="swiper gallery-swiper" data-aos="fade-up" data-aos-delay="100">
       <div class="swiper-wrapper" id="galleryWrapper">
-        <!-- slides injected by JS -->
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-1.jpg" loading="lazy" alt="Salón de fiestas con parrilla de iluminación azul, cabezas móviles y pista de baile iluminada — producción Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-2.jpg" loading="lazy" alt="Estructura de trusses con iluminación y pantallas LED sobre mesas de gala en salón de eventos — rigging Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-3.jpg" loading="lazy" alt="Cabina de DJ sobre estructura de truss con techo de luces cálidas y haces azules en fiesta — sonido e iluminación Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-4.jpg" loading="lazy" alt="Estructura geométrica de trusses con conos iluminados en colores en evento al aire libre de noche — Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-5.jpg" loading="lazy" alt="Salón de gala con iluminación magenta, trusses, pantallas LED y esferas doradas suspendidas — iluminación Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="https://www.instagram.com/stoessel_ing/" target="_blank" rel="noopener" class="slide-link">
+            <img class="slide-img" src="assets/img/gallery-6.jpg" loading="lazy" alt="Ambientación inmersiva con esculturas suspendidas, pantallas LED y piso espejado en evento — producción técnica Stöessel" />
+            <div class="slide-overlay">
+              <span class="slide-tag" data-i18n="gallery.fallbackTag">Instagram</span>
+              <h3 class="slide-title">Stöessel</h3>
+              <span class="slide-ig"><i class="fa-brands fa-instagram"></i> <span data-i18n="gallery.igLabel">Ver en Instagram</span></span>
+            </div>
+          </a>
+        </div>
       </div>
       <!-- Navigation -->
       <div class="swiper-button-prev"></div>
@@ -288,6 +414,7 @@
             <label for="message" data-i18n="contact.form.message">Mensaje</label>
           </div>
           <button type="submit" class="btn-primary" data-i18n="contact.form.send">Enviar mensaje</button>
+          <p id="formStatus" class="form-status" role="status" hidden data-i18n="contact.form.success">Se abrió tu aplicación de correo. Si no se abrió, escribinos a info@stoessel-eventos.com o por WhatsApp.</p>
         </form>
 
       </div>
@@ -315,7 +442,7 @@
         <!-- Nav Links -->
         <div class="footer-nav">
           <h4 data-i18n="footer.links">Enlaces</h4>
-          <a href="#inicio" data-i18n="nav.home">Inicio</a>
+          <a href="#hero" data-i18n="nav.home">Inicio</a>
           <a href="#nosotros" data-i18n="nav.about">Nosotros</a>
           <a href="#servicios" data-i18n="nav.services">Servicios</a>
           <a href="#galeria" data-i18n="nav.gallery">Galería</a>
@@ -326,7 +453,7 @@
         <div class="footer-legal-col">
           <h4 data-i18n="footer.legal">Legal</h4>
           <a href="#" id="privacyLink" data-i18n="footer.privacy">Política de Privacidad</a>
-          <a href="#" data-i18n="footer.terms">Términos y Condiciones</a>
+          <a href="#" id="termsLink" data-i18n="footer.terms">Términos y Condiciones</a>
         </div>
 
       </div>
@@ -343,6 +470,16 @@
       <h2 id="privacyTitle" data-i18n="privacy.title">Política de Privacidad</h2>
       <p data-i18n="privacy.body">
         Stöessel Ingeniería en Eventos respeta su privacidad. Los datos personales proporcionados a través de este sitio serán utilizados exclusivamente para responder consultas y no serán compartidos con terceros. Para más información, contáctenos.
+      </p>
+    </div>
+  </div>
+  <!-- Terms & Conditions Modal -->
+  <div id="termsModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="termsTitle">
+    <div class="modal-content">
+      <button class="modal-close" id="termsModalClose" aria-label="Cerrar">&times;</button>
+      <h2 id="termsTitle" data-i18n="terms.title">Términos y Condiciones</h2>
+      <p data-i18n="terms.body">
+        Este sitio tiene fines informativos. Los presupuestos comunicados por este medio no son vinculantes hasta su confirmación por escrito. Todo el contenido (textos, imágenes y marca) es propiedad de Stöessel Ingeniería en Eventos y no puede reproducirse sin autorización. Para cualquier consulta, contáctenos.
       </p>
     </div>
   </div>
