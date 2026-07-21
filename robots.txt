@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://stoessel-ing.vercel.app/sitemap.xml
+Sitemap: https://www.stoessel-eventos.com/sitemap.xml

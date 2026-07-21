@@ -380,9 +380,15 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 .service-text .service-tagline {
   font-style: italic;
-  font-size: 1rem;
+  font-size: 1.08rem;
+  font-weight: 500;
   color: var(--gold);
   margin: -10px 0 14px;
+  animation: taglineGlow 3s ease-in-out infinite;
+}
+@keyframes taglineGlow {
+  0%, 100% { text-shadow: 0 0 2px rgba(245,195,0,0); opacity: 0.82; }
+  50%      { text-shadow: 0 0 16px var(--gold-glow), 0 0 4px rgba(245,195,0,0.5); opacity: 1; }
 }
 
 /* ---------- QUALITY ---------- */
@@ -874,6 +880,7 @@ a.contact-value:hover { color: var(--gold); }
   html { scroll-behavior: auto; }
   .hero-scroll-hint .chevron { animation: none; }
   .fab-whatsapp { animation: none; }
+  .service-text .service-tagline { animation: none; opacity: 1; }
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
