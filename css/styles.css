@@ -26,7 +26,7 @@
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
-/* ---------- ANIMATED BACKGROUND GLOWS ---------- */
+/* ---------- ANIMATED BACKGROUND SPARKLES (stage lights) ---------- */
 .bg-fx {
   position: fixed;
   inset: 0;
@@ -39,31 +39,46 @@ html { scroll-behavior: smooth; overflow-x: hidden; }
 .bg-fx::after {
   content: '';
   position: absolute;
-  width: 60vmax;
-  height: 60vmax;
-  border-radius: 50%;
-  filter: blur(120px);
-  will-change: transform;
+  inset: 0;
+  background-repeat: repeat;
+  will-change: opacity;
 }
+/* fine pinpoints: gold + white */
 .bg-fx::before {
-  top: -20%;
-  left: -10%;
-  background: #FFCC00;
-  opacity: 0.12;
-  animation: bgDrift1 26s ease-in-out infinite alternate;
+  background-image:
+    radial-gradient(1.5px 1.5px at 40px 60px,   rgba(255,204,0,0.9), transparent),
+    radial-gradient(1px 1px     at 130px 200px, rgba(255,255,255,0.8), transparent),
+    radial-gradient(1.5px 1.5px at 250px 90px,  rgba(255,204,0,0.7), transparent),
+    radial-gradient(1px 1px     at 340px 300px, rgba(255,255,255,0.6), transparent),
+    radial-gradient(2px 2px     at 460px 170px, rgba(255,204,0,0.8), transparent),
+    radial-gradient(1px 1px     at 80px 420px,  rgba(255,255,255,0.7), transparent),
+    radial-gradient(1.5px 1.5px at 380px 480px, rgba(255,204,0,0.6), transparent),
+    radial-gradient(1px 1px     at 520px 380px, rgba(255,255,255,0.5), transparent);
+  background-size: 560px 560px;
+  opacity: 0.3;
+  animation: sparkleA 7s ease-in-out infinite;
 }
+/* sparser, slightly larger: red + warm white, offset tile so layers never align */
 .bg-fx::after {
-  bottom: -25%;
-  right: -10%;
-  background: #DD0000;
-  opacity: 0.09;
-  animation: bgDrift2 32s ease-in-out infinite alternate;
+  background-image:
+    radial-gradient(2px 2px     at 90px 130px,  rgba(221,0,0,0.75), transparent),
+    radial-gradient(1.5px 1.5px at 300px 40px,  rgba(255,220,150,0.7), transparent),
+    radial-gradient(2px 2px     at 520px 260px, rgba(221,0,0,0.6), transparent),
+    radial-gradient(1.5px 1.5px at 180px 360px, rgba(255,220,150,0.6), transparent),
+    radial-gradient(2.5px 2.5px at 420px 500px, rgba(255,204,0,0.5), transparent),
+    radial-gradient(1.5px 1.5px at 620px 150px, rgba(221,0,0,0.5), transparent);
+  background-size: 700px 700px;
+  background-position: 170px 90px;
+  opacity: 0.25;
+  animation: sparkleB 11s ease-in-out infinite;
 }
-@keyframes bgDrift1 {
-  to { transform: translate(18vw, 12vh) scale(1.15); }
+@keyframes sparkleA {
+  0%, 100% { opacity: 0.14; }
+  50%      { opacity: 0.42; }
 }
-@keyframes bgDrift2 {
-  to { transform: translate(-15vw, -10vh) scale(0.9); }
+@keyframes sparkleB {
+  0%, 100% { opacity: 0.32; }
+  45%      { opacity: 0.1; }
 }
 @media (prefers-reduced-motion: reduce) {
   .bg-fx::before,
@@ -785,11 +800,18 @@ a.contact-value:hover { color: var(--gold); }
 
 .footer-bottom {
   padding: 20px 0;
-  text-align: center;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
 }
 .footer-bottom p {
   font-size: 0.8rem;
