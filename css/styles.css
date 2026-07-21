@@ -10,10 +10,10 @@
   --bg:        #0d0d0d;
   --surface:   #1a1a1a;
   --surface2:  #222222;
-  --red:       #CC0000;
-  --red-glow:  rgba(204,0,0,0.4);
-  --gold:      #F5C300;
-  --gold-glow: rgba(245,195,0,0.35);
+  --red:       #DD0000; /* German-flag red */
+  --red-glow:  rgba(221,0,0,0.4);
+  --gold:      #FFCC00; /* German-flag gold */
+  --gold-glow: rgba(255,204,0,0.35);
   --white:     #FFFFFF;
   --muted:     #888888;
   --border:    rgba(255,255,255,0.08);
@@ -134,7 +134,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   box-shadow: 0 0 0 0 var(--red-glow);
 }
 .btn-primary:hover {
-  background: #e60000;
+  background: #f01010;
   box-shadow: 0 0 22px 6px var(--red-glow);
   transform: translateY(-2px);
 }
@@ -433,8 +433,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   animation: taglineGlow 3s ease-in-out infinite;
 }
 @keyframes taglineGlow {
-  0%, 100% { text-shadow: 0 0 2px rgba(245,195,0,0); opacity: 0.82; }
-  50%      { text-shadow: 0 0 16px var(--gold-glow), 0 0 4px rgba(245,195,0,0.5); opacity: 1; }
+  0%, 100% { text-shadow: 0 0 2px rgba(255,204,0,0); opacity: 0.82; }
+  50%      { text-shadow: 0 0 16px var(--gold-glow), 0 0 4px rgba(255,204,0,0.5); opacity: 1; }
 }
 
 /* ---------- QUALITY ---------- */
@@ -582,7 +582,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 .swiper-button-prev,
 .swiper-button-next {
   color: var(--white) !important;
-  background: rgba(204,0,0,0.8);
+  background: rgba(221,0,0,0.8);
   width: 44px !important; height: 44px !important;
   border-radius: 50%;
   transition: var(--transition);
@@ -786,11 +786,60 @@ a.contact-value:hover { color: var(--gold); }
 .footer-bottom {
   padding: 20px 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
 }
 .footer-bottom p {
   font-size: 0.8rem;
   color: var(--muted);
 }
+
+/* Respawn Studio credit ("Code & Craft" wordmark) */
+.footer-credit {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  transition: color var(--transition);
+}
+.footer-credit:hover { color: var(--white); }
+.rpwn-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: -0.02em;
+  color: #F0F0F0;
+}
+.rpwn-gt {
+  color: #00E5CC;
+  font-weight: 400;
+  opacity: 0.6;
+  font-size: 0.7em;
+}
+.rpwn-studio {
+  color: #00E5CC;
+  font-size: 0.55em;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  opacity: 0.7;
+  margin-left: 1px;
+}
+.rpwn-cursor {
+  display: inline-block;
+  width: 2px;
+  height: 0.85em;
+  background: #00E5CC;
+  margin-left: 2px;
+  animation: rpwnBlink 1s step-end infinite;
+}
+@keyframes rpwnBlink { 50% { opacity: 0; } }
 
 /* ---------- PRIVACY MODAL ---------- */
 .modal {
@@ -927,6 +976,7 @@ a.contact-value:hover { color: var(--gold); }
   .hero-scroll-hint .chevron { animation: none; }
   .fab-whatsapp { animation: none; }
   .service-text .service-tagline { animation: none; opacity: 1; }
+  .rpwn-cursor { animation: none; }
   [data-aos] {
     opacity: 1 !important;
     transform: none !important;
