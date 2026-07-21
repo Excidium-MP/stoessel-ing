@@ -26,6 +26,50 @@
 
 html { scroll-behavior: smooth; overflow-x: hidden; }
 
+/* ---------- ANIMATED BACKGROUND GLOWS ---------- */
+.bg-fx {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+  background: var(--bg);
+}
+.bg-fx::before,
+.bg-fx::after {
+  content: '';
+  position: absolute;
+  width: 60vmax;
+  height: 60vmax;
+  border-radius: 50%;
+  filter: blur(120px);
+  will-change: transform;
+}
+.bg-fx::before {
+  top: -20%;
+  left: -10%;
+  background: #FFCC00;
+  opacity: 0.12;
+  animation: bgDrift1 26s ease-in-out infinite alternate;
+}
+.bg-fx::after {
+  bottom: -25%;
+  right: -10%;
+  background: #DD0000;
+  opacity: 0.09;
+  animation: bgDrift2 32s ease-in-out infinite alternate;
+}
+@keyframes bgDrift1 {
+  to { transform: translate(18vw, 12vh) scale(1.15); }
+}
+@keyframes bgDrift2 {
+  to { transform: translate(-15vw, -10vh) scale(0.9); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .bg-fx::before,
+  .bg-fx::after { animation: none; }
+}
+
 body {
   background: var(--bg);
   color: var(--white);
@@ -232,6 +276,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  background: var(--bg); /* opaque: keeps the bg-fx glows from reading behind the video */
 }
 .hero-video {
   position: absolute;
@@ -303,7 +348,8 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ---------- ABOUT ---------- */
-.about { background: var(--bg); }
+/* transparent (body is the same --bg color) so the bg-fx glows read through */
+.about { background: transparent; }
 
 .about-grid {
   display: grid;
@@ -393,7 +439,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 
 /* ---------- QUALITY ---------- */
 .quality {
-  background: var(--bg);
+  background: transparent;
   padding: 100px 0;
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -561,7 +607,7 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 /* ---------- CONTACT ---------- */
-.contact { background: var(--bg); }
+.contact { background: transparent; }
 
 .contact-grid {
   display: grid;
